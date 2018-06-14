@@ -2,7 +2,7 @@
 
 > Gravium miner with just one click - Nvidia and AMD over Windows.
 
-![Gravium Miner](https://i.imgur.com/nsWzP08.png "Gravium Miner")
+![Gravium Miner](https://i.imgur.com/qOEzVza.png "Gravium Miner")
 
 #### NVIDIA ADVISE
 
@@ -18,7 +18,7 @@
 
 **I do not have a Gravium Address**
 
-Please download and install our wallet from [Gravium website](https://graviumproject.org), then generate a new Gravium Address.
+Please download and install our wallet from [Gravium website](https://gravium.io), then generate a new Gravium Address.
 
 **AMD Graphics is cycling and never start to mine**
 
