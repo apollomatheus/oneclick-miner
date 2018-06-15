@@ -92,7 +92,7 @@ import { clearInterval } from 'timers';
           duration: 3000,
           message: 'Here we go!',
           position: 'is-bottom',
-          type: 'is-primary',
+          type: 'is-dark',
         });
 
         if ((this.platform === 'win32' || this.platform === 'win')
@@ -152,7 +152,7 @@ import { clearInterval } from 'timers';
       --api-port=4028 \
       -o ${this.currentPool} \
       -u ${this.settings.wallet} \
-      -p c=MTN \
+      -p c=GRV \
       -X 256 \
       --kernel-path=""${path.join(__static, minerPath)}/amd/${this.settings.amdMiner}/kernel""`);
 
@@ -182,7 +182,7 @@ import { clearInterval } from 'timers';
               duration: 3000,
               message: 'AMD GPU miner is now stopped',
               position: 'is-bottom',
-              type: 'is-primary',
+              type: 'is-dark',
             });
 
             clearInterval(this.amdInfo);
@@ -191,10 +191,10 @@ import { clearInterval } from 'timers';
       },
       runNvidia(minerPath) {
         const miner = exec(`start cmd.exe /K "${path.join(__static, minerPath)}/nvidia/${this.settings.nvidiaMiner}/miner \
-        --algo=x16r --url=${this.currentPool} --user=${this.settings.wallet} -b 0.0.0.0:4068 -p c=MTN"`);
+        --algo=x16r --url=${this.currentPool} --user=${this.settings.wallet} -b 0.0.0.0:4068 -p c=GRV"`);
 
         console.log(`start cmd.exe /K "${path.join(__static, minerPath)}/nvidia/${this.settings.nvidiaMiner}/miner \
-        --algo=x16r --url=${this.currentPool} --user=${this.settings.wallet} -b 0.0.0.0:4068 -p c=MTN"`);
+        --algo=x16r --url=${this.currentPool} --user=${this.settings.wallet} -b 0.0.0.0:4068 -p c=GRV"`);
 
         this.setPids(miner.pid);
 
@@ -242,7 +242,7 @@ import { clearInterval } from 'timers';
               duration: 3000,
               message: 'nVidia GPU miner is now stopped',
               position: 'is-bottom',
-              type: 'is-primary',
+              type: 'is-dark',
             });
             clearInterval(this.nvidiaInfo);
           }
