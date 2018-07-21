@@ -6,7 +6,7 @@ const minerAutoLauncher = new AutoLaunch({
 });
 
 const state = {
-  currentPool: 'stratum+tcp://eu1.dummdipool.de:3636',
+  currentPool: 'stratum+tcp://pool.zcore.cash:4233',
   customPool: '',
   poolSelectedByUser: false,
   mineWith: ['gpu'],
