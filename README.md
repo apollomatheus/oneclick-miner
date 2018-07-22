@@ -61,4 +61,4 @@ yarn lint
 
 This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[1c165f7](https://github.com/SimulatedGREG/electron-vue/tree/1c165f7c5e56edaf48be0fbb70838a1af26bb015) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
 
-Inside works with [Z-Enemy Miner](https://bitcointalk.org/index.php?topic=3378390.0;all) and [Suprminer](https://github.com/ocminer/suprminer) for nVidia. [Avermore](https://github.com/brian112358/avermore-miner) and [SGMiner-kl](https://github.com/KL0nLutiy/sgminer-kl/releases) for AMD.
+Inside works with [Suprminer](https://github.com/ocminer/suprminer) for nVidia. [Avermore](https://github.com/brian112358/avermore-miner) and [SGMiner-kl](https://github.com/KL0nLutiy/sgminer-kl/releases) for AMD.
