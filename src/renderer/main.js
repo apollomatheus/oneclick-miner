@@ -15,6 +15,7 @@ const config = {
   databaseURL: 'https://gravium-miner.firebaseio.com',
   projectId: 'gravium-miner',
 };
+
 window.firebase.initializeApp(config);
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'));

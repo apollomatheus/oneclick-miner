@@ -16,9 +16,9 @@
 
 #### Troubleshootings
 
-**I do not have a Gravium Address**
+**I do not have a ZCore Address**
 
-Please download and install our wallet from [Gravium website](https://gravium.io), then generate a new Gravium Address.
+Please download and install our wallet from [ZCore website](https://zcore.cash), then generate a new address.
 
 **AMD Graphics is cycling and never start to mine**
 

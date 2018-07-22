@@ -17,13 +17,13 @@ body {
 ::-webkit-scrollbar { display: none; }
 
 #app {
-  background: #404041;
+  background: #e7e7e7;
   // padding: 60px 80px;
   width: 100vw;
   min-height: 100vh;
   height: auto;
   max-width: 100%;
-  color: #fff;
+  color: rgb(21, 56, 47);
   overflow: hidden;
 }
 
@@ -53,6 +53,7 @@ h3 {
   right: 0;
   padding: 30px;
   background-color: $primary;
+  color:white;
   width: 100%;
   height: 1px !important;
 }
@@ -65,10 +66,10 @@ input[type="submit"] {
 
 label.label,
 span.control-label {
-  color: #fff;
+  color: #023834;
 
   &:hover {
-    color: rgb(170, 170, 170);
+    color: #01524c;
   }
 }
 

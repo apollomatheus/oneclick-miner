@@ -1,7 +1,7 @@
 import AutoLaunch from 'auto-launch';
 
 const minerAutoLauncher = new AutoLaunch({
-  name: 'Gravium Miner',
+  name: 'ZCore Miner',
   // path: `${process.env.PORTABLE_EXECUTABLE_DIR}\\Gravium Miner 0.1.3.exe`,
 });
 
@@ -18,6 +18,8 @@ const state = {
     miner: false,
     windows: false,
   },
+  balance: 0,
+  ubalance: 0,
 };
 
 const mutations = {
@@ -31,6 +33,7 @@ const mutations = {
   },
   CHANGE_WALLET_ADDRESS(state, payload) {
     state.wallet = payload.wallet;
+    state.balanace = 0;
   },
   CHANGE_ADVANCED_MODE(state, payload) {
     state.advancedMode = payload.advancedMode;
@@ -62,7 +65,7 @@ const mutations = {
       windows: false,
     };
     state.advancedMode = false;
-    state.currentPool = 'stratum+tcp://eu1.dummdipool.de:3636';
+    state.currentPool = 'stratum+tcp://pool.zcorre.cash:4233';
   },
 };
 

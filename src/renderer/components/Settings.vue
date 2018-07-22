@@ -20,7 +20,7 @@
       </div>
       <div class="field-container" v-if="poolSelected === 'custom'">
         <b-field label="Please enter the full Stratum URL Server with port">
-          <b-input v-model="customPool" placeholder="stratum+tcp://eu.cryptoally.net:4233"></b-input>
+          <b-input v-model="customPool" placeholder="stratum+tcp://pool.zcore.cash:4233"></b-input>
         </b-field>
       </div>
       <div class="field-container">
@@ -29,12 +29,6 @@
           <div class="field">
             <b-radio v-model="nvidiaMiner" native-value="suprminer">
               Suprminer
-            </b-radio>
-          </div>
-          <div class="field">
-            <b-radio v-model="nvidiaMiner"
-              native-value="enemy">
-              Z-Enemy
             </b-radio>
           </div>
         </div>
@@ -55,14 +49,14 @@
         <div class="block">
           <div class="field">
             <b-checkbox v-model="autostartMiner">
-              At Gravium Miner Start
+              At Miner Start
             </b-checkbox>
             <b-checkbox v-model="autostartWindows">
               At Windows Start
             </b-checkbox>
           </div>
         </div>
-        <!-- <label class="label">Advanced</label>
+        <!--<label class="label">Advanced</label>
         <div class="block">
           <b-checkbox v-model="advancedMode">
             Show mining console?
@@ -95,7 +89,13 @@
   export default {
     data() {
       return {
-        pools: [],
+        pools: [{ name: 'ZCore Pool by ReiDosCoins', url: 'stratum+tcp://pool.zcore.cash:4233 -p c=ZCR ' },
+          { name: 'SaltPool.net', url: 'stratum+tcp://saltpool.net:4243 -p c=ZCR ' },
+          { name: 'ZergPool.com', url: 'stratum+tcp://neoscrypt.mine.zergpool.com:4233 -p c=ZCR,mc=ZCR ' },
+          { name: 'BlockMasters.co', url: 'stratum+tcp://blockmasters.co:4233 -p c=ZCR ' },
+          { name: 'Essomining.tec', url: 'stratum+tcp://essomining.tech:4233 -p c=ZCR ' },
+          { name: 'Altpools.com', url: 'stratum+tcp://sv2.altpools.com:4233 -p c=ZCR ' },
+          { name: 'Hashing.Network', url: 'stratum+tcp://hashing.network:42332 -p c=ZCR ' }],
         customPool: '',
         poolSelected: null,
         poolSelectedByUser: false,
@@ -150,7 +150,6 @@
         this.amdMiner = this.$store.state.Settings.amdMiner;
         this.autostartMiner = this.$store.state.Settings.autostart.miner;
         this.autostartWindows = this.$store.state.Settings.autostart.windows;
-        this.getPools();
         this.$toast.open({
           duration: 3000,
           message: 'Settings resetted to defaults',
@@ -185,7 +184,6 @@
       },
     },
     created() {
-      this.getPools();
       this.poolSelected = this.$store.state.Settings.currentPool;
       this.customPool = this.$store.state.Settings.customPool;
       this.poolSelectedByUser = this.$store.state.Settings.poolSelectedByUser;
