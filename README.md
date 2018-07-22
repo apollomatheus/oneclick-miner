@@ -1,8 +1,8 @@
-# Gravium Miner
+# ZCore Miner
 
-> Gravium miner with just one click - Nvidia and AMD over Windows.
+> ZCore miner with just one click - Nvidia and AMD over Windows.
 
-![Gravium Miner](https://i.imgur.com/qOEzVza.png "Gravium Miner")
+![ZCore Miner](https://i.imgur.com/UPShCfU.png "Zcore Miner")
 
 #### NVIDIA ADVISE
 
@@ -12,7 +12,7 @@
 
 - [X] Custom pools
 - [X] AMD Graphics support (beta)
-- [ ] Integration with Pools API
+- [X] Integration with Pools API
 
 #### Troubleshootings
 
